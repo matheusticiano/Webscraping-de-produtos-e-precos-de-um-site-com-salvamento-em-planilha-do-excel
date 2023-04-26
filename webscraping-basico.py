@@ -4,12 +4,12 @@ from time import sleep
 from openpyxl import Workbook
 from openpyxl.styles import Alignment, Font, PatternFill
 
-driver = webdriver.Chrome('C:/Users/matheus/Downloads/driver/chromedriver.exe')
-driver.get('https://www.paguemenos.com.br/medicamentos-e-saude')
+driver = webdriver.Chrome('DRIVER AQUI')
+driver.get('SITE AQUI')
 sleep(5)
 
-prices = driver.find_elements_by_class_name("paguemenos-teaser-labels-2-x-price")
-names = driver.find_elements_by_class_name("vtex-product-summary-2-x-productBrand")
+prices = driver.find_elements_by_class_name("PREÇOS AQUI")
+names = driver.find_elements_by_class_name("PRODUTOS AQUI")
 
 produtos = []
 for nome, preco in zip(names, prices):
